@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { margin: 0; }
+    .slide-container { width: 1280px; min-height: 720px; background: radial-gradient(circle at 15% 20%, rgba(56,189,248,0.18), transparent 28%), linear-gradient(135deg, #0B1020 0%, #111827 100%); color: #CBD5E1; font-family: 'Space Grotesk', sans-serif; }
+    .slide-container .frame { width: 1280px; min-height: 720px; padding-top: 58px; padding-left: 76px; padding-right: 64px; display: grid; grid-template-columns: 590px 1fr; column-gap: 44px; }
+    .slide-container .eyebrow { font-family: 'JetBrains Mono', monospace; color: #FACC15; font-size: 18px; letter-spacing: 1.5px; margin-top: 14px; }
+    .slide-container h1 { color: #F8FAFC; font-size: 58px; line-height: 1.02; letter-spacing: -1.8px; margin-top: 28px; max-width: 560px; }
+    .slide-container .subtitle { margin-top: 30px; font-size: 25px; line-height: 1.35; color: #CBD5E1; max-width: 540px; }
+    .slide-container .highlight { color: #FACC15; font-weight: 700; }
+    .slide-container .keywords { margin-top: 42px; font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #38BDF8; line-height: 1.8; }
+    .slide-container .group-shell { margin-top: 34px; width: 500px; min-height: 440px; border-top: 3px solid #FACC15; border-bottom: 3px solid rgba(56,189,248,0.7); background: rgba(248,250,252,0.04); padding-top: 48px; padding-left: 40px; }
+    .slide-container .group-name { font-size: 38px; color: #F8FAFC; margin-bottom: 32px; letter-spacing: -0.5px; }
+    .slide-container .members-label { font-family: 'JetBrains Mono', monospace; color: #38BDF8; font-size: 16px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+    .slide-container .member { font-family: 'JetBrains Mono', monospace; font-size: 20px; color: #CBD5E1; margin-bottom: 14px; display: flex; align-items: center; }
+    .slide-container .member::before { content: "> "; color: #FACC15; margin-right: 12px; font-weight: 700; }
+    .slide-container .gridline { height: 2px; width: 135px; background: #FACC15; margin-top: 28px; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="frame">
+      <section>
+        <div class="eyebrow">EXPOSICIÓN · GUÍAS DE ESTILO</div>
+        <h1>Guías de estilo de grandes empresas tecnológicas</h1>
+        <div class="gridline"></div>
+        <p class="subtitle">Cómo <span class="highlight">Google</span>, <span class="highlight">Microsoft</span>, <span class="highlight">Airbnb</span> y <span class="highlight">Meta/React</span> establecen estándares de código y cómo aparece <span class="highlight">camelCase</span>.</p>
+        <div class="keywords">PALABRAS CLAVE:<br/>estándares · consistencia · legibilidad · mantenibilidad · colaboración</div>
+      </section>
+      <section>
+        <div class="group-shell">
+          <h2 class="group-name">Grupo Soem Oficial</h2>
+          <div class="members-label">Integrantes:</div>
+          <div class="member">Anthony Berroteran</div>
+          <div class="member">Heidy Garcia</div>
+          <div class="member">Angy Cifuentes</div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

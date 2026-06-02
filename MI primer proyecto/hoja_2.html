@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { margin: 0; }
+    .slide-container { width: 1280px; min-height: 720px; background: linear-gradient(135deg, #0B1020 0%, #111827 100%); color: #CBD5E1; font-family: 'Space Grotesk', sans-serif; }
+    .slide-container .frame { width: 1280px; min-height: 720px; padding-top: 54px; padding-left: 78px; padding-right: 78px; }
+    .slide-container .top { display: flex; align-items: center; justify-content: space-between; height: 54px; border-top: 2px solid rgba(250,204,21,0.9); }
+    .slide-container .section-label { font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #38BDF8; letter-spacing: 1px; margin-top: 16px; }
+    .slide-container h1 { color: #F8FAFC; font-size: 42px; letter-spacing: -1px; margin-top: 22px; }
+    .slide-container .content { margin-top: 44px; display: grid; grid-template-columns: 510px 560px; column-gap: 54px; align-items: start; }
+    .slide-container .definition { font-size: 29px; line-height: 1.25; color: #F8FAFC; }
+    .slide-container .definition strong { color: #FACC15; }
+    .slide-container .quote { margin-top: 34px; font-size: 19px; line-height: 1.45; color: #CBD5E1; border-top: 1px solid rgba(56,189,248,0.75); padding-top: 20px; }
+    .slide-container .source { margin-top: 16px; font-family: 'JetBrains Mono', monospace; color: #94A3B8; font-size: 13px; }
+    .slide-container .concept-row { height: 92px; display: grid; grid-template-columns: 150px 1fr; align-items: center; border-top: 1px solid rgba(148,163,184,0.35); }
+    .slide-container .concept-row:last-child { border-bottom: 1px solid rgba(148,163,184,0.35); }
+    .slide-container .tag { font-family: 'JetBrains Mono', monospace; color: #FACC15; font-size: 16px; }
+    .slide-container .desc { font-size: 20px; line-height: 1.25; color: #CBD5E1; }
+    .slide-container .keywords { margin-top: 42px; font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #38BDF8; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="frame">
+      <div class="top"><div class="section-label">01 · CONCEPTO BASE</div></div>
+      <h1>¿Qué es una guía de estilo?</h1>
+      <div class="content">
+        <section>
+          <p class="definition">Conjunto de <strong>reglas y convenciones</strong> para escribir código de forma uniforme dentro de un proyecto o equipo.</p>
+          <p class="quote">“Es mucho más fácil entender una base de código grande cuando todo el código mantiene un estilo consistente”.</p>
+          <p class="source">Fuente: Google Style Guides [1]</p>
+        </section>
+        <section>
+          <div class="concept-row"><div class="tag">ORDEN</div><div class="desc">Reduce decisiones repetidas sobre formato y nombres.</div></div>
+          <div class="concept-row"><div class="tag">LECTURA</div><div class="desc">Hace que el código sea predecible para otros programadores.</div></div>
+          <div class="concept-row"><div class="tag">EQUIPO</div><div class="desc">Facilita revisiones, mantenimiento y colaboración.</div></div>
+          <div class="keywords">PALABRAS CLAVE: reglas · convenciones · consistencia · legibilidad</div>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { margin: 0; }
+    .slide-container { width: 1280px; min-height: 720px; background: radial-gradient(circle at 82% 18%, rgba(250,204,21,0.12), transparent 24%), linear-gradient(135deg, #0B1020 0%, #111827 100%); color: #CBD5E1; font-family: 'Space Grotesk', sans-serif; }
+    .slide-container .frame { width: 1280px; min-height: 720px; padding-top: 48px; padding-left: 76px; padding-right: 76px; }
+    .slide-container .label { font-family: 'JetBrains Mono', monospace; color: #38BDF8; font-size: 14px; letter-spacing: 1px; border-top: 2px solid #FACC15; padding-top: 14px; }
+    .slide-container h1 { color: #F8FAFC; font-size: 42px; margin-top: 22px; letter-spacing: -1px; }
+    .slide-container .subtitle { margin-top: 14px; width: 980px; font-size: 21px; line-height: 1.3; color: #CBD5E1; }
+    .slide-container .subtitle strong { color: #FACC15; }
+    .slide-container .grid { margin-top: 34px; display: grid; grid-template-columns: 540px 540px; column-gap: 48px; row-gap: 24px; }
+    .slide-container .qa { height: 128px; border-top: 1px solid rgba(148,163,184,0.42); padding-top: 15px; display: grid; grid-template-columns: 58px 1fr; column-gap: 18px; }
+    .slide-container .num { font-family: 'JetBrains Mono', monospace; color: #FACC15; font-size: 30px; line-height: 1; }
+    .slide-container .question { color: #F8FAFC; font-size: 20px; line-height: 1.22; }
+    .slide-container .answer { margin-top: 9px; color: #CBD5E1; font-size: 17px; line-height: 1.25; }
+    .slide-container .answer strong { color: #FACC15; }
+    .slide-container .keywords { margin-top: 8px; font-family: 'JetBrains Mono', monospace; color: #38BDF8; font-size: 12px; line-height: 1.35; }
+    .slide-container .closing { margin-top: 42px; display: grid; grid-template-columns: 260px 1fr; column-gap: 34px; align-items: center; border-top: 2px solid rgba(56,189,248,0.75); padding-top: 20px; }
+    .slide-container .closing-label { font-family: 'JetBrains Mono', monospace; color: #FACC15; font-size: 18px; letter-spacing: 0.5px; }
+    .slide-container .closing-text { color: #F8FAFC; font-size: 25px; line-height: 1.25; }
+    .slide-container .closing-text span { color: #FACC15; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="frame">
+      <div class="label">09 · PREGUNTAS DE CIERRE</div>
+      <h1>Preguntas de cierre para la exposición</h1>
+      <p class="subtitle">Usa estas respuestas como guía oral: <strong>breves, directas y con palabras clave</strong>.</p>
+
+      <section class="grid">
+        <div class="qa">
+          <div class="num">01</div>
+          <div>
+            <div class="question">¿En qué difieren las guías de Google y Microsoft para Camel Case?</div>
+            <div class="answer"><strong>Google</strong> depende del lenguaje; <strong>Microsoft</strong> separa PascalCase para APIs y camelCase para parámetros.</div>
+            <div class="keywords">ecosistema · API pública · PascalCase · camelCase</div>
+          </div>
+        </div>
+
+        <div class="qa">
+          <div class="num">02</div>
+          <div>
+            <div class="question">¿Cómo maneja Airbnb el uso de siglas en identificadores JavaScript?</div>
+            <div class="answer">Integra siglas al patrón del nombre: <strong>apiClientId</strong>, <strong>httpResponseCode</strong>; prioridad: legibilidad.</div>
+            <div class="keywords">siglas · camelCase · legibilidad · consistencia</div>
+          </div>
+        </div>
+
+        <div class="qa">
+          <div class="num">03</div>
+          <div>
+            <div class="question">¿Por qué las guías de estilo son importantes en proyectos open source?</div>
+            <div class="answer">Porque muchas personas colaboran; reducen confusión, aceleran revisiones y mejoran mantenimiento.</div>
+            <div class="keywords">colaboración · revisión · mantenimiento · calidad</div>
+          </div>
+        </div>
+
+        <div class="qa">
+          <div class="num">04</div>
+          <div>
+            <div class="question">¿Qué herramientas usan estas empresas para enforce sus guías automáticamente?</div>
+            <div class="answer">Usan <strong>linters</strong>, formateadores, pruebas, revisión de código e integración continua.</div>
+            <div class="keywords">ESLint · Prettier · CI/CD · pruebas · revisión</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing">
+        <div class="closing-label">CONCLUSIÓN</div>
+        <div class="closing-text">Una guía de estilo convierte el código en un lenguaje común: <span>más claro, consistente y colaborativo</span>.</div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

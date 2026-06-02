@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { margin: 0; }
+    .slide-container { width: 1280px; min-height: 720px; background: linear-gradient(135deg, #0B1020 0%, #111827 100%); color: #CBD5E1; font-family: 'Space Grotesk', sans-serif; }
+    .slide-container .frame { width: 1280px; min-height: 720px; padding-top: 50px; padding-left: 76px; padding-right: 76px; }
+    .slide-container .label { font-family: 'JetBrains Mono', monospace; color: #38BDF8; font-size: 14px; letter-spacing: 1px; border-top: 2px solid #FACC15; padding-top: 14px; }
+    .slide-container h1 { color: #F8FAFC; font-size: 42px; margin-top: 22px; letter-spacing: -1px; }
+    .slide-container .intro { width: 1040px; margin-top: 18px; font-size: 21px; line-height: 1.35; color: #CBD5E1; }
+    /* Reduced matrix top margin to save vertical space */
+    .slide-container .matrix { margin-top: 18px; width: 1128px; border-top: 1px solid rgba(148,163,184,0.45); }
+    /* Slightly smaller row min-height to reduce total height (keeps readable spacing) */
+    .slide-container .row { display: grid; grid-template-columns: 185px 390px 1fr; min-height: 64px; align-items: center; border-bottom: 1px solid rgba(148,163,184,0.32); }
+    .slide-container .head { min-height: 46px; color: #94A3B8; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.8px; }
+    .slide-container .company { font-family: 'JetBrains Mono', monospace; color: #FACC15; font-size: 18px; font-weight: 700; }
+    .slide-container .focus { font-size: 19px; line-height: 1.25; color: #F8FAFC; }
+    .slide-container .camel { font-size: 18px; line-height: 1.28; color: #CBD5E1; }
+    .slide-container code { font-family: 'JetBrains Mono', monospace; color: #38BDF8; font-size: 16px; }
+    /* Slightly reduced spacing above the answer block */
+    .slide-container .answer { margin-top: 30px; display: grid; grid-template-columns: 310px 1fr; column-gap: 36px; align-items: start; border-top: 2px solid rgba(56,189,248,0.75); padding-top: 22px; }
+    .slide-container .question { font-family: 'JetBrains Mono', monospace; color: #FACC15; font-size: 17px; line-height: 1.45; }
+    .slide-container .response { font-size: 23px; line-height: 1.32; color: #F8FAFC; }
+    .slide-container .response span { color: #FACC15; font-weight: 700; }
+    .slide-container .keywords { margin-top: 20px; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #38BDF8; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="frame">
+      <div class="label">07 · COMPARACIÓN ENTRE GUÍAS</div>
+      <h1>Comparación: Google, Microsoft, Airbnb y Meta/React</h1>
+      <p class="intro">Cada empresa adapta sus reglas a su ecosistema: <strong>lenguajes</strong>, <strong>APIs</strong>, <strong>JavaScript</strong> o <strong>componentes UI</strong>.</p>
+
+      <section class="matrix">
+        <div class="row head">
+          <div>EMPRESA</div><div>ENFOQUE</div><div>¿DÓNDE APARECE CAMELCASE?</div>
+        </div>
+        <div class="row">
+          <div class="company">Google</div>
+          <div class="focus">Guías separadas por lenguaje.</div>
+          <div class="camel">Depende del lenguaje: variables, métodos o identificadores según cada guía.</div>
+        </div>
+        <div class="row">
+          <div class="company">Microsoft</div>
+          <div class="focus">Diseño de APIs públicas .NET.</div>
+          <div class="camel">Usa <code>PascalCase</code> en tipos/miembros y <code>camelCase</code> en parámetros.</div>
+        </div>
+        <div class="row">
+          <div class="company">Airbnb</div>
+          <div class="focus">JavaScript moderno y reglas prácticas.</div>
+          <div class="camel">Variables, funciones, props e instancias con nombres legibles.</div>
+        </div>
+        <div class="row">
+          <div class="company">Meta/React</div>
+          <div class="focus">Componentes reutilizables con JSX.</div>
+          <div class="camel">Props como <code>userName</code>; componentes en <code>PascalCase</code>.</div>
+        </div>
+      </section>
+
+      <section class="answer">
+        <div class="question">PREGUNTA 1<br/>¿En qué difieren Google y Microsoft para Camel Case?</div>
+        <div>
+          <p class="response"><span>Google</span> ajusta camelCase según cada lenguaje; <span>Microsoft</span> distingue convenciones .NET: PascalCase para APIs públicas y camelCase para parámetros.</p>
+          <div class="keywords">PALABRAS CLAVE: ecosistema · API pública · lenguaje · PascalCase · camelCase</div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

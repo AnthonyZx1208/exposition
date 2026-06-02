@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { margin: 0; }
+    .slide-container { width: 1280px; min-height: 720px; background: linear-gradient(135deg, #0B1020 0%, #111827 100%); color: #CBD5E1; font-family: 'Space Grotesk', sans-serif; }
+    .slide-container .frame { width: 1280px; min-height: 720px; padding-top: 50px; padding-left: 76px; padding-right: 76px; }
+    .slide-container .label { font-family: 'JetBrains Mono', monospace; color: #38BDF8; font-size: 14px; letter-spacing: 1px; border-top: 2px solid #FACC15; padding-top: 14px; }
+    .slide-container h1 { color: #F8FAFC; font-size: 42px; margin-top: 22px; letter-spacing: -1px; }
+    .slide-container .intro { width: 1040px; margin-top: 18px; font-size: 21px; line-height: 1.34; color: #CBD5E1; }
+    .slide-container .intro strong { color: #FACC15; }
+    .slide-container .main { margin-top: 40px; display: grid; grid-template-columns: 510px 560px; column-gap: 58px; align-items: start; }
+    .slide-container .question-block { border-top: 1px solid rgba(56,189,248,0.8); padding-top: 22px; }
+    .slide-container .question { font-family: 'JetBrains Mono', monospace; color: #FACC15; font-size: 16px; line-height: 1.55; }
+    .slide-container .answer { margin-top: 24px; color: #F8FAFC; font-size: 28px; line-height: 1.2; letter-spacing: -0.3px; }
+    .slide-container .answer span { color: #FACC15; font-weight: 700; }
+    .slide-container .support { margin-top: 26px; font-size: 19px; line-height: 1.42; color: #CBD5E1; }
+    .slide-container .pipeline { border-top: 1px solid rgba(148,163,184,0.45); }
+    /* Reduced each step height from 72px to 64px to remove overflow without changing font sizes */
+    .slide-container .step { height: 64px; display: grid; grid-template-columns: 140px 1fr; align-items: center; border-bottom: 1px solid rgba(148,163,184,0.34); }
+    .slide-container .tool { font-family: 'JetBrains Mono', monospace; color: #38BDF8; font-size: 17px; font-weight: 700; }
+    .slide-container .desc { font-size: 18px; line-height: 1.25; color: #CBD5E1; }
+    .slide-container .desc strong { color: #F8FAFC; }
+    .slide-container .bottom { margin-top: 42px; display: grid; grid-template-columns: 1fr 310px; column-gap: 42px; align-items: start; border-top: 1px solid rgba(250,204,21,0.75); padding-top: 18px; }
+    .slide-container .keywords { font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #38BDF8; line-height: 1.65; }
+    .slide-container .sources { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #94A3B8; line-height: 1.55; text-align: right; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="frame">
+      <div class="label">08 · OPEN SOURCE Y AUTOMATIZACIÓN</div>
+      <h1>Open source: reglas claras + control automático</h1>
+      <p class="intro">En proyectos abiertos, muchas personas modifican el mismo código; por eso una guía de estilo crea <strong>consistencia</strong> y reduce fricción en revisiones.</p>
+
+      <div class="main">
+        <section class="question-block">
+          <div class="question">PREGUNTA 3<br/>¿Por qué las guías de estilo son importantes en proyectos open source?</div>
+          <p class="answer">Porque convierten el código en un lenguaje <span>común</span> para todos los colaboradores.</p>
+          <p class="support">Ayudan a que las revisiones sean más rápidas, evitan discusiones repetidas sobre formato y facilitan que nuevos contribuidores entiendan el proyecto.</p>
+        </section>
+
+        <section class="pipeline">
+          <div class="step"><div class="tool">ESLint</div><div class="desc"><strong>Detecta</strong> errores y reglas de estilo en JavaScript.</div></div>
+          <div class="step"><div class="tool">Prettier</div><div class="desc"><strong>Formatea</strong> el código de manera consistente.</div></div>
+          <div class="step"><div class="tool">Tests</div><div class="desc"><strong>Verifican</strong> que los cambios no rompan funciones.</div></div>
+          <div class="step"><div class="tool">CI/CD</div><div class="desc"><strong>Bloquea</strong> cambios que no cumplen reglas.</div></div>
+          <div class="step"><div class="tool">Reviews</div><div class="desc"><strong>Validan</strong> claridad, nombres y mantenibilidad.</div></div>
+        </section>
+      </div>
+
+      <div class="bottom">
+        <div class="keywords">PREGUNTA 4 · Herramientas usadas: linters · formateadores · pruebas automáticas · integración continua · revisión de código</div>
+        <div class="sources">Fuentes: ESLint Docs [5]<br/>Prettier Docs [6]</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
